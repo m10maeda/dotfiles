@@ -57,3 +57,10 @@ set softtabstop=2
 
 " 行末の1文字先までカーソル移動を可能にする
 set virtualedit=onemore
+
+
+" プラグイン
+" ----------------
+
+" カラースキーマを solarized に設定
+colorscheme solarized
