@@ -41,7 +41,7 @@ if type brew &>/dev/null; then
         GIT_PS1_SHOWCOLORHINTS=true
 
         # プロンプトに Git 情報を表示
-        export PS1='${fg[green]}%n@%m${reset_color}:${fg[blue]}%~${reset_color} ${fg[red]}$(__git_ps1 "(%s)")${reset_color}
+        export PS1='${fg[green]}%n@%m${reset_color}:${fg[blue]}%~${reset_color}$(__git_ps1 " (%s)")
 %# '
     fi
 fi
