@@ -29,15 +29,15 @@ if type brew &>/dev/null; then
         # git-prompt の読み込み
         source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
 
-        # dirty state（tracked file の更新の有無と staged の状況）を表示
+        # tracked file の更新の有無(`+`)と staged の状況(`*`)を表示
         GIT_PS1_SHOWDIRTYSTATE=true
-        # stash 状態を表示
+        # stash 状態(`$`)を表示
         GIT_PS1_SHOWSTASHSTATE=true
-        # untracked file の有無を表示
+        # untracked file の有無(`%`)を表示
         GIT_PS1_SHOWUNTRACKEDFILES=true
-        # HEAD とその upstream との間の比較情報を表示
+        # HEAD とその upstream との間の比較情報(`=`, `<`, `>`)を表示
         GIT_PS1_SHOWUPSTREAM="auto"
-        # dirty state を色付けして表示
+        # 現在の状態を色付けして表示
         GIT_PS1_SHOWCOLORHINTS=true
 
         # プロンプトに Git 情報を表示
