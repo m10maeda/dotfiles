@@ -36,3 +36,9 @@
     ```
     exec ${SHELL}
     ```
+
+## How to update `.Brewfile`
+
+```shell
+brew bundle dump --file=~/.dotfiles/.Brewfile --force --describe
+```
